@@ -1,8 +1,6 @@
 
 # Dynamic Form
 
----
-
 ## Description
 
 This custom Drupal 9 module provides a demonstration of creating a custom form with a dynamically rendered conditional field.
