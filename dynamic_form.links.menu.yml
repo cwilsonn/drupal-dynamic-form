@@ -1,0 +1,11 @@
+dynamic_form.form_demo:
+  title: "Form Demo"
+  description: "Form demo with conditional field using AJAX callback function."
+  route_name: "dynamic_form.form_demo"
+  menu_name: main
+
+dynamic_form.form_demo_using_state:
+  title: "Form Demo with State"
+  description: "Form demo with conditional field using form #state property."
+  route_name: "dynamic_form.form_demo_using_state"
+  menu_name: main

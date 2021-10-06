@@ -1,0 +1,5 @@
+name: "Conditional Form Fields Demo"
+description: "A custom module that provides a demonstration of custom forms with dynamically rendered conditional field logic."
+package: Custom
+type: module
+core_version_requirement: ^9

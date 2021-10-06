@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function dynamic_form_install()
+{
+  // Create some framework content nodes for use in the form demos
+  $frameworks = ['Vue', 'React', 'Angular', 'AngularJS', 'Svelte', 'Alpine', 'Redwood'];
+  foreach ($frameworks as $name) {
+    $node = \Drupal::entityTypeManager()->getStorage('node')
+      ->create([
+        'type' => 'framework',
+        'title' => $name,
+      ]);
+    $node->save();
+  }
+}
+
+/**
+ * Implements hook_uninstall.
+ */
+function dynamic_form_uninstall()
+{
+  // Thank you!
+  \Drupal::messenger()->addMessage(t('Thank you for checking out my conditional form fields demo!'));
+  // Delete all framework content nodes.
+  $node_storage = \Drupal::entityTypeManager()->getStorage('node');
+  $framework_query = $node_storage->getQuery()->condition('type', 'framework');
+  $nids = $framework_query->execute();
+  $nodes = $node_storage->loadMultiple($nids);
+  $node_storage->delete($nodes);
+}

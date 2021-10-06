@@ -1,0 +1,14 @@
+{
+    "name": "drupal/dynamic_form",
+    "description": "A custom module to demonstrate to the team at Elevated Third my Drupal development chops",
+    "type": "drupal-custom-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Cody Wilson",
+            "email": "cody@codywilson.dev"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

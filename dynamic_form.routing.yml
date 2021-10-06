@@ -1,0 +1,13 @@
+dynamic_form.form_demo:
+  path: "/dynamic-form/form-demo"
+  defaults:
+    _form: '\Drupal\dynamic_form\Form\DynamicForm'
+  requirements:
+    _permission: "access content"
+
+dynamic_form.form_demo_using_state:
+  path: "/dynamic-form/form-demo-using-state"
+  defaults:
+    _form: '\Drupal\dynamic_form\Form\DynamicFormUsingState'
+  requirements:
+    _permission: "access content"
